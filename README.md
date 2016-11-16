@@ -1,5 +1,9 @@
 # Clicktocongress
 
+# Basic Dependencies
+* [elixir](http://elixir-lang.org/)
+* hex `mix local.hex`
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
