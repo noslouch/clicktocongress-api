@@ -43,7 +43,9 @@ defmodule Clicktocongress.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:ex_twilio, "~> 0.2.1"},
-     {:ex_twiml, "~> 2.1.2"}
+     {:ex_twiml, "~> 2.1.2"},
+     {:tesla, "~> 0.5.0"},
+     {:poison, ">= 1.0.0"}
    ]
   end
 end
