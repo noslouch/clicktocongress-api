@@ -8,7 +8,7 @@ defmodule Clicktocongress.CallController do
     text conn, :ok
   end
   
-  def connect(conn, %{"t" => to_call}) do
+  def dial_out(conn, %{"t" => to_call}) do
     resp = Clicktocongress.Twiml.dial_out to_call
     conn
     |> put_resp_content_type("text/xml")

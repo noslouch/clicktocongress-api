@@ -22,6 +22,6 @@ defmodule Clicktocongress.Router do
   scope "/api", Clicktocongress do
     pipe_through :api
     get "/call", CallController, :call_me
-    post "/connect", CallController, :connect
+    post "/connect", CallController, :dial_out
   end
 end
