@@ -1,4 +1,4 @@
-defmodule Clicktocongress.Twiml do
+defmodule Twiml do
   import ExTwiml
   
   def dial_out(phone_number) do
