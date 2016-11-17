@@ -25,7 +25,8 @@ defmodule Clicktocongress.Mixfile do
        :logger,
        :gettext,
        :ex_twilio,
-       :ex_twiml]]
+       :ex_twiml,
+       :corsica]]
   end
 
   # Specifies which paths to compile per environment.
@@ -46,7 +47,8 @@ defmodule Clicktocongress.Mixfile do
      {:ex_twiml, "~> 2.1.2"},
      {:tesla, "~> 0.5.0"},
      {:poison, ">= 1.0.0"},
-     {:hackney, "~> 1.6.3"}
+     {:hackney, "~> 1.6.3"},
+     {:corsica, "~> 0.5"}
    ]
   end
 end

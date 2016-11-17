@@ -36,5 +36,7 @@ defmodule Clicktocongress.Endpoint do
     key: "_clicktocongress_key",
     signing_salt: "maMDcEfe"
 
+  plug Corsica, origins: "*"
+  
   plug Clicktocongress.Router
 end
