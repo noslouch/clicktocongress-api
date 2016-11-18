@@ -13,13 +13,13 @@ use Mix.Config
 # which you typically run after static files are built.
 config :clicktocongress, Clicktocongress.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "api.clicktocongress.com", port: 443],
+  url: [scheme: "https", host: "clicktocongress.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 config :clicktocongress,
-  host_for_twilio: "api.clicktocongress.com",
+  host_for_twilio: "clicktocongress.herokuapp.com",
   scheme_for_twilio: "https"
 
 # Do not print debug messages in production
