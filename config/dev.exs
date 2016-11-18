@@ -13,6 +13,9 @@ config :clicktocongress, Clicktocongress.Endpoint,
   check_origin: false,
   watchers: []
 
+config :clicktocongress,
+  host_for_twilio: System.get_env("ngrok"),
+  scheme_for_twilio: "http"
 
 # Watch static and templates for browser reloading.
 config :clicktocongress, Clicktocongress.Endpoint,
