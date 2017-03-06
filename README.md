@@ -20,3 +20,13 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+  
+## Environment Variables
+```sh
+GOOGLE_MAPS_KEY
+TWILIO_ACCOUNT_SID
+TWILIO_AUTH_TOKEN
+TWILIO_NUMBER
+SECRET_KEY_BASE
+DATABASE_URL # managed by heroku
+```
