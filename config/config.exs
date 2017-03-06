@@ -14,6 +14,7 @@ config :clicktocongress, Clicktocongress.Repo,
 
 config :clicktocongress,
   ecto_repos: [Clicktocongress.Repo],
+  google_maps_key: System.get_env("GOOGLE_MAPS_KEY") || ""
 
 # Configures the endpoint
 config :clicktocongress, Clicktocongress.Endpoint,
