@@ -66,7 +66,6 @@ config :logger, level: :info
 
 config :clicktocongress, Clicktocongress.Repo,
   adapter: Ecto.Adapters.Postgres,
-  database: "clicktocongress_repo",
-  username: System.get_env("DB_USER"),
-  password: System.get_env("DB_PASS"),
-  hostname: System.get_env("DB_HOST")
+  url: System.get_env("DATABASE_URL"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
+  ssl: true
