@@ -19,6 +19,11 @@ defmodule Clicktocongress.Web do
   def model do
     quote do
       # Define common model functionality
+      use Ecto.Schema
+
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query
     end
   end
 
@@ -26,6 +31,7 @@ defmodule Clicktocongress.Web do
     quote do
       use Phoenix.Controller
 
+      alias Clicktocongress.Repo
       import Clicktocongress.Router.Helpers
       import Clicktocongress.Gettext
     end

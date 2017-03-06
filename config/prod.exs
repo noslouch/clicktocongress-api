@@ -64,3 +64,10 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
+
+config :clicktocongress, Clicktocongress.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "clicktocongress_repo",
+  username: System.get_env("DB_USER"),
+  password: System.get_env("DB_PASS"),
+  hostname: System.get_env("DB_HOST")

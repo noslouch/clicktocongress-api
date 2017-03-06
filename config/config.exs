@@ -5,6 +5,16 @@
 # is restricted to this project.
 use Mix.Config
 
+config :clicktocongress, Clicktocongress.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "clicktocongress_repo",
+  username: "postgres",
+  password: "postgres",
+  hostname: "localhost"
+
+config :clicktocongress,
+  ecto_repos: [Clicktocongress.Repo],
+
 # Configures the endpoint
 config :clicktocongress, Clicktocongress.Endpoint,
   url: [host: "localhost"],

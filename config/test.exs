@@ -8,3 +8,10 @@ config :clicktocongress, Clicktocongress.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config :clicktocongress, Clicktocongress.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "clicktocongress_repo",
+  username: "user",
+  password: "pass",
+  hostname: "localhost"
